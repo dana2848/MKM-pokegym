@@ -1,0 +1,175 @@
+
+/* ******************** */
+/* html {
+  background: url("images/back.jpeg");
+  background-size: cover; //this covers the window size
+  background-repeat: no-repeat; //this stops it from repeats if possible
+  background-position: center;
+} */
+
+html {
+  z-index: -1;
+  height:100%;
+  /*background: linear-gradient(to right top, #ff77fb 0%, #3498db 100%);*/
+  background: center / cover no-repeat url('images/lightback.gif');
+}
+
+body {
+  font-family: 'Inconsolata', monospace;
+}
+
+h1, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  color: #f48642;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkorange;
+}
+
+h5 {
+ font-family: 'Montserrat', sans-serif;
+  color: #f48642;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px darkorange; 
+}
+
+.container {
+	width: 90%;
+	padding: 20px;
+}
+
+/*.pokemon-grid {
+	display: grid;
+	grid-template: 100% / 30% 70%;
+	grid-gap: 5%;
+}*/
+
+
+.grid-temp {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 400px;
+  height: 400px;
+  height: 500px;
+  padding: 6%;
+  border-radius: 10px;
+  box-shadow: black -2px -2px 10px;
+  background: rgba(255, 255, 255, 0.1);
+
+}
+
+#trainer-grid {
+  display: grid;
+  grid-template-columns: 20% 40% 30%;
+  grid-gap: 20px;
+  grid-template-rows: 20% 50%;
+  height: 400px;
+  padding: 6%;
+  margin-right: 10%;
+  border-radius: 10px;
+  box-shadow: black -2px -2px 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#trainer-grid button {
+  text-transform: uppercase;
+  padding: 10%;
+  border-radius: 7px;
+  font-weight: 700; /* BOLD */
+  background-color: #f48642;
+  border: 1px solid #f48642;
+  color: #fafafa;
+}
+
+#trainer-grid button:hover {
+  transition: .5s;
+  background-color: #000;
+  color: #f48642;
+  border-color: #000;
+}
+
+#trainer-grid button:focus {
+  animation: 2s pulse infinite;
+  background-color: #fafafa;
+  color: #000;
+}
+
+#level, #battle, #caught {
+  padding: 10% 0;
+  font-size: 16px;
+  color: #fafafa;
+}
+
+#level i, #battle i, #caught i {
+  color: #f48642;
+}
+
+
+#poke-grid {
+  display: grid;
+  grid-template-columns: 20% 40% 30%;
+  grid-gap: 5px;
+  grid-template-rows: 20% 50%;
+  height: 400px;
+  padding: 6%;
+  border-radius: 10px;
+  box-shadow: black -2px -2px 10px;
+  background: rgba(255, 255, 255, 0.1);
+  /*border: 1px solid red;*/
+}
+/*#poke-grid * {
+  border: 1px solid red;
+}*/
+
+#stats {
+  display: grid;
+  justify-content: start;
+  color: #fafafa;
+  /*margin-right: 5%;*/
+}
+
+#stats span {
+  color: #f48642;
+  font-weight: bold;
+}
+
+#stats ul li {
+  font-size: 20px;
+}
+
+#trainer-grid div {
+  padding: 15px;
+}
+
+/* **************************************** */
+
+
+#trainer {
+  height: 40vh;
+}
+
+#bat {
+  /* display:flex;
+  background-color: green; */
+  justify-content: : center;
+  text-align: center;
+  margin-top: 150px;
+  margin-left: 45%;
+  padding:10 10 10 10px;
+
+}
+
+
+@keyframes pulse {
+  0% {
+    padding: 10%;
+  }
+
+  50% {
+    padding: 12%;
+  }
+
+  100% {
+    padding: 10%;
+  }
+}
